@@ -9,6 +9,10 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:3.+'
         classpath 'com.google.gms:google-services:4.3.3'
+      
+    }
+}
+ dependencies {
         implementation('androidx.work:work-runtime-ktx') {
         version {
             strictly '2.6'
@@ -16,8 +20,6 @@ buildscript {
     }
 
     }
-}
-
 cdvPluginPostBuildExtras.add({
     rootProject.subprojects {
         if (name == "app") {
